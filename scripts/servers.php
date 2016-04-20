@@ -30,7 +30,7 @@ if (isset($_GET["ip"]) and isset($_GET["port"])){
     $port = $_GET["port"];
     
     if (empty($ip) or empty($port)){
-        echo '<script>window.location="'.'../../web/index.php?app=home&redirect=_emptyipport'.'"</script>';
+        echo '<script>window.location="../../PocketCore-Web/index.php?app=home&redirect=_emptyipport"</script>';
     }
     $isRegistered = Servers::isServerRegistered($ip, $port); // should return false..
 

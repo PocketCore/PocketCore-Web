@@ -15,6 +15,12 @@
       <link rel='stylesheet' type='text/css' href='tempate/css/component.css'></link>
       
     	<!-- Page content goes here -->
+    	<?php
+    	if ($_GET["redirect"] === "_emptyipport"){
+    	  // IP or port was empty. Display a toast.
+    	  echo "<script>Materialize.toast('The IP or port was empty! Try again!', 3000);</script>";
+    	}
+    	?>
     	<div class="slider">
     	  <!-- page image -->
     	    <ul class="slides">
@@ -26,7 +32,7 @@
     	            </div>
     	            <div class="caption center-align" style="margin-top: 160px; text-align: center;">
     	                <!-- Form box to register your own server for PocketCore -->
-    	                <form class="col s3" action="../web/scripts/servers.php" method="get">
+    	                <form class="col s3" action="../PocketCore-Web/scripts/servers.php" method="get">
     	                    <div class="row">
                                 <div class="input-field col s6">
                                   <input id="ip" type="text" class="validate" name="ip">

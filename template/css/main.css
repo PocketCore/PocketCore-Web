@@ -25,6 +25,21 @@
     box-shadow: 0px 12px 17px rgb(163, 163, 163) !important;
 }
 
+/* Style properties for app=account */
+.authBox {
+    padding: 45px;
+    border-radius: 8px;
+    width: 45%;
+    margin: 0 auto;
+    border: none;
+}
+.messageBox {
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    opacity: 0.8;
+}
 /* Sticky footer
     http://materializecss.com/footer.html
 */
